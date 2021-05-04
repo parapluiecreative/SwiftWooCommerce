@@ -9,3 +9,11 @@ Enable Firebase Auth to manage your mobile customers
 Set up your own Stripe accounts to accept payments
 (Optional) Customize colors, branding elements, featured categories, etc.
 Submit your app to the App Store
+
+# The main pod dependencies that we are using in this iOS shopping app template are:
+
+Facebook SDK – used for Login and Sign Up with Facebook
+Firebase – used for Firebase Auth, Firestore and Notifications
+Stripe – for Stripe Payments integration
+Alamofire – used for networking
+Kingfisher – for performant image download management
