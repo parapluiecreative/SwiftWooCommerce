@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="InstaMultiRowPageCarouselCollectionViewCell" customModule="DatingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="251"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="278" height="251"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KvO-EA-l9C" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="278" height="251"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frz-Bq-bCT" userLabel="Carousel Title Label">
+                                <rect key="frame" x="15" y="8" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="6Wo-BH-Han">
+                                <rect key="frame" x="223" y="0.0" width="39" height="37"/>
+                            </pageControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXX-Bz-f9o" userLabel="Carousel Container View">
+                                <rect key="frame" x="10" y="39" width="258" height="202"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Wo-BH-Han" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="frz-Bq-bCT" secondAttribute="trailing" constant="15" id="GqD-98-12n"/>
+                            <constraint firstItem="nXX-Bz-f9o" firstAttribute="width" secondItem="KvO-EA-l9C" secondAttribute="width" constant="-20" id="KKs-51-S4P"/>
+                            <constraint firstAttribute="trailing" secondItem="6Wo-BH-Han" secondAttribute="trailing" constant="16" id="Lvz-kv-p1e"/>
+                            <constraint firstItem="frz-Bq-bCT" firstAttribute="top" secondItem="KvO-EA-l9C" secondAttribute="top" constant="8" id="ROh-8s-FSI"/>
+                            <constraint firstItem="nXX-Bz-f9o" firstAttribute="top" secondItem="frz-Bq-bCT" secondAttribute="bottom" constant="10" id="Rvd-c0-cRH"/>
+                            <constraint firstAttribute="bottom" secondItem="nXX-Bz-f9o" secondAttribute="bottom" constant="10" id="bxj-tk-I7M"/>
+                            <constraint firstItem="nXX-Bz-f9o" firstAttribute="centerX" secondItem="KvO-EA-l9C" secondAttribute="centerX" id="eR9-CM-Jtv"/>
+                            <constraint firstItem="6Wo-BH-Han" firstAttribute="top" secondItem="KvO-EA-l9C" secondAttribute="top" id="hA5-rK-Zlj"/>
+                            <constraint firstItem="frz-Bq-bCT" firstAttribute="leading" secondItem="KvO-EA-l9C" secondAttribute="leading" constant="15" id="yrl-DJ-PKZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="KvO-EA-l9C" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="9BF-0g-mPu"/>
+                <constraint firstItem="KvO-EA-l9C" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="HgL-XV-SO7"/>
+                <constraint firstItem="KvO-EA-l9C" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="hVC-zV-xN7"/>
+                <constraint firstItem="KvO-EA-l9C" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="od4-ik-Tlg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="278" height="251"/>
+            <connections>
+                <outlet property="carouselContainerView" destination="nXX-Bz-f9o" id="fDY-xG-gXi"/>
+                <outlet property="carouselTitleLabel" destination="frz-Bq-bCT" id="GNr-Fa-5rx"/>
+                <outlet property="containerView" destination="KvO-EA-l9C" id="KrT-Aq-tex"/>
+                <outlet property="pageControl" destination="6Wo-BH-Han" id="oVI-fV-k3N"/>
+            </connections>
+            <point key="canvasLocation" x="-44.799999999999997" y="245.12743628185908"/>
+        </collectionViewCell>
+    </objects>
+</document>

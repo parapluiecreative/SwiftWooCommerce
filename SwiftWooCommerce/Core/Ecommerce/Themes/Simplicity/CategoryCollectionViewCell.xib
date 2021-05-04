@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="RestaurantApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="312" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="312" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyH-bC-T3y" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="312" height="130"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxy-RJ-rEl">
+                                <rect key="frame" x="0.0" y="0.0" width="312" height="130"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cMa-Jh-sNd">
+                                <rect key="frame" x="0.0" y="0.0" width="312" height="130"/>
+                            </imageView>
+                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtU-al-piB">
+                                <rect key="frame" x="0.0" y="57" width="312" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dxy-RJ-rEl" firstAttribute="centerY" secondItem="zyH-bC-T3y" secondAttribute="centerY" id="6Xb-o5-2Qx"/>
+                            <constraint firstItem="cMa-Jh-sNd" firstAttribute="height" secondItem="zyH-bC-T3y" secondAttribute="height" id="6pn-Wr-jZg"/>
+                            <constraint firstItem="PtU-al-piB" firstAttribute="centerX" secondItem="zyH-bC-T3y" secondAttribute="centerX" id="FGB-EY-brN"/>
+                            <constraint firstItem="cMa-Jh-sNd" firstAttribute="width" secondItem="zyH-bC-T3y" secondAttribute="width" id="J6D-nB-VUZ"/>
+                            <constraint firstItem="PtU-al-piB" firstAttribute="centerY" secondItem="zyH-bC-T3y" secondAttribute="centerY" id="Jgi-ad-eU0"/>
+                            <constraint firstItem="dxy-RJ-rEl" firstAttribute="centerX" secondItem="zyH-bC-T3y" secondAttribute="centerX" id="Jnd-Mt-KkE"/>
+                            <constraint firstItem="cMa-Jh-sNd" firstAttribute="centerX" secondItem="zyH-bC-T3y" secondAttribute="centerX" id="L4S-dm-wNS"/>
+                            <constraint firstItem="dxy-RJ-rEl" firstAttribute="width" secondItem="zyH-bC-T3y" secondAttribute="width" id="SVR-8X-bdX"/>
+                            <constraint firstItem="dxy-RJ-rEl" firstAttribute="height" secondItem="zyH-bC-T3y" secondAttribute="height" id="TcH-V4-ZPx"/>
+                            <constraint firstItem="PtU-al-piB" firstAttribute="width" secondItem="zyH-bC-T3y" secondAttribute="width" id="Wbt-im-jvZ"/>
+                            <constraint firstItem="cMa-Jh-sNd" firstAttribute="centerY" secondItem="zyH-bC-T3y" secondAttribute="centerY" id="xrK-oL-jam"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="zyH-bC-T3y" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="8Sn-l1-QEj"/>
+                <constraint firstItem="zyH-bC-T3y" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="Sz2-Gn-XmO"/>
+                <constraint firstItem="zyH-bC-T3y" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="TBK-ws-2Wn"/>
+                <constraint firstItem="zyH-bC-T3y" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="llQ-ip-uYR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="312" height="130"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="cMa-Jh-sNd" id="cv3-9k-cdT"/>
+                <outlet property="categoryBackgroundView" destination="dxy-RJ-rEl" id="nvS-9f-ZFD"/>
+                <outlet property="categoryTitleLabel" destination="PtU-al-piB" id="bro-FD-Ca9"/>
+            </connections>
+            <point key="canvasLocation" x="195" y="148"/>
+        </collectionViewCell>
+    </objects>
+</document>

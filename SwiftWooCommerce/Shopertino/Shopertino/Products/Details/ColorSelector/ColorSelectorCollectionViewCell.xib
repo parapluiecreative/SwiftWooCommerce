@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ColorSelectorCollectionViewCell" customModule="Shopertino" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="106" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="106" height="101"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TzC-ix-ad0" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="5" width="106" height="101"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cOe-e4-QiU">
+                                <rect key="frame" x="2.5" y="2.5" width="101" height="96"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cOe-e4-QiU" firstAttribute="centerX" secondItem="TzC-ix-ad0" secondAttribute="centerX" id="Aym-Tx-mRE"/>
+                            <constraint firstItem="cOe-e4-QiU" firstAttribute="height" secondItem="TzC-ix-ad0" secondAttribute="height" constant="-5" id="mAe-97-HJK"/>
+                            <constraint firstItem="cOe-e4-QiU" firstAttribute="width" secondItem="TzC-ix-ad0" secondAttribute="width" constant="-5" id="nrm-1n-uyX"/>
+                            <constraint firstItem="cOe-e4-QiU" firstAttribute="centerY" secondItem="TzC-ix-ad0" secondAttribute="centerY" id="yG6-75-7y2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="TzC-ix-ad0" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="LPp-lC-LDC"/>
+                <constraint firstItem="TzC-ix-ad0" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="aXv-ku-QxI"/>
+                <constraint firstItem="TzC-ix-ad0" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="ahS-7l-iu9"/>
+                <constraint firstItem="TzC-ix-ad0" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="gXp-ys-f3L"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="106" height="101"/>
+            <connections>
+                <outlet property="containerView" destination="TzC-ix-ad0" id="PgQ-bJ-ZyH"/>
+                <outlet property="imageView" destination="cOe-e4-QiU" id="GSr-FO-uLH"/>
+            </connections>
+            <point key="canvasLocation" x="97.101449275362327" y="170.42410714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

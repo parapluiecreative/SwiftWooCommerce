@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ATCPieChartCollectionViewCell" customModule="FinanceApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="175"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="175"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Kz-lT-NnG" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="175"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXh-Wy-uG6" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="195" height="175"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pXh-Wy-uG6" firstAttribute="centerX" secondItem="6Kz-lT-NnG" secondAttribute="centerX" id="8tM-yM-UyS"/>
+                            <constraint firstItem="pXh-Wy-uG6" firstAttribute="width" secondItem="6Kz-lT-NnG" secondAttribute="width" id="Vxe-YU-W5J"/>
+                            <constraint firstItem="pXh-Wy-uG6" firstAttribute="centerY" secondItem="6Kz-lT-NnG" secondAttribute="centerY" id="oXF-AF-Q4c"/>
+                            <constraint firstItem="pXh-Wy-uG6" firstAttribute="height" secondItem="6Kz-lT-NnG" secondAttribute="height" id="v9Z-gq-eJs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="6Kz-lT-NnG" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="BQZ-QP-Dii"/>
+                <constraint firstItem="6Kz-lT-NnG" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="BU4-e5-Bab"/>
+                <constraint firstItem="6Kz-lT-NnG" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="P6x-PX-lST"/>
+                <constraint firstItem="6Kz-lT-NnG" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="anh-AC-CGa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="195" height="175"/>
+            <connections>
+                <outlet property="containerChartView" destination="6Kz-lT-NnG" id="jpa-6N-rj0"/>
+                <outlet property="pieChartView" destination="pXh-Wy-uG6" id="Xmj-SB-6wm"/>
+            </connections>
+            <point key="canvasLocation" x="-38.5" y="116.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

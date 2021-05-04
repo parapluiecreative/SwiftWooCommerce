@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ATCFacepileView" customModule="ChatApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5I7-u1-IGj">
+                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LZb-1w-GUx">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="LZb-1w-GUx" secondAttribute="bottom" id="AQL-QS-0cP"/>
+                            <constraint firstItem="LZb-1w-GUx" firstAttribute="top" secondItem="5I7-u1-IGj" secondAttribute="top" id="Fad-pg-IAe"/>
+                            <constraint firstItem="LZb-1w-GUx" firstAttribute="leading" secondItem="5I7-u1-IGj" secondAttribute="leading" id="hu5-pW-k5Y"/>
+                            <constraint firstAttribute="trailing" secondItem="LZb-1w-GUx" secondAttribute="trailing" id="jjg-Xw-wpa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5I7-u1-IGj" secondAttribute="trailing" id="5L1-Dy-GTj"/>
+                <constraint firstItem="5I7-u1-IGj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Cfn-u4-hHP"/>
+                <constraint firstItem="5I7-u1-IGj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZFu-dK-w9e"/>
+                <constraint firstAttribute="bottom" secondItem="5I7-u1-IGj" secondAttribute="bottom" id="ZSd-jM-QgZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="containerView" destination="5I7-u1-IGj" id="zLG-aW-qdg"/>
+                <outlet property="seenerFacepile" destination="LZb-1w-GUx" id="CFB-je-6qL"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="125"/>
+        </collectionViewCell>
+    </objects>
+</document>

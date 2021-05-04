@@ -1,0 +1,30 @@
+/* 
+  ATCComposerLocalizable.strings
+  StoreLocator
+
+  Created by Duy Bui on 12/7/19.
+  Copyright © 2019 Instamobile. All rights reserved.
+*/
+
+"Add Photos" = "إضافة الصور";
+"Title" = "عنوان";
+"Description" = "وصف";
+"Price" = "السعر";
+"Category" = "الفئة";
+"Enter price..." = "أدخل السعر ...";
+"Please select a category first." = "الرجاء اختيار الفئة أولاً.";
+"Add New Place" = "أضف مكان جديد";
+"Please enter a title." = "الرجاء إدخال عنوان.";
+"Please enter a description." = "الرجاء إدخال وصف.";
+"Please enter a price." = "الرجاء إدخال سعر.";
+"You must choose a category." = "يجب عليك اختيار فئة.";
+"You must configure all the filters." = "يجب تكوين كل المرشحات.";
+"You must upload at least one photo." = "يجب عليك تحميل صورة واحدة على الأقل.";
+"Enter Price (e.g. $150)" = "أدخل السعر (على سبيل المثال 150 دولارًا)";
+"The listing was successfully posted." = "تم نشر القائمة بنجاح.";
+"Choose Category" = "اختر الفئة";
+"You need to log in, in order to post a listing." = "تحتاج إلى تسجيل الدخول ، من أجل نشر قائمة.";
+"You can't submit a listing, unless you have a complete profile. Please make sure you uploaded a profile picture, and you specified your full name." = "لا يمكنك إرسال بطاقة بيانات ، ما لم يكن لديك ملف تعريف كامل. الرجاء التأكد من تحميل صورة ملف شخصي وتحديد اسمك الكامل.";
+"Remove photo" = "إزالة الصورة";
+"Import from Library" = "استيراد من المكتبة";
+"Take Photo" = "تصوير";

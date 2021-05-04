@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ATCContactUsViewController" customModule="RadioApp" customModuleProvider="target">
+            <connections>
+                <outlet property="callToActionButton" destination="2YS-Ln-pwQ" id="HuN-M6-jo3"/>
+                <outlet property="callToActionLabel" destination="wRr-mN-4Uq" id="iHt-jN-tfw"/>
+                <outlet property="mainLabel" destination="7z8-qS-8m7" id="Rcd-z5-GV0"/>
+                <outlet property="mainSubtitleLabel" destination="mmc-CU-6Vb" id="nHb-Yw-wSl"/>
+                <outlet property="socialMediaLabel" destination="J7x-yL-yx4" id="UDU-cf-C9g"/>
+                <outlet property="socialMediaView" destination="dp0-y6-g44" id="XZ2-Y4-mUO"/>
+                <outlet property="view" destination="iN0-l3-epB" id="22w-2X-Cin"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We would love your feedback" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmc-CU-6Vb">
+                    <rect key="frame" x="75.5" y="88" width="224" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please send us an email at" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRr-mN-4Uq">
+                    <rect key="frame" x="86" y="166.5" width="202" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YS-Ln-pwQ">
+                    <rect key="frame" x="113" y="186.5" width="148" height="30"/>
+                    <state key="normal" title="contact@rockfm.com"/>
+                    <connections>
+                        <action selector="callToActionPressed:" destination="-1" eventType="touchUpInside" id="RlU-wi-wGs"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7x-yL-yx4">
+                    <rect key="frame" x="67.5" y="257.5" width="240.5" height="41"/>
+                    <string key="text">or
+you can find as on Social Media</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get in touch" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7z8-qS-8m7">
+                    <rect key="frame" x="122.5" y="50" width="130.5" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dp0-y6-g44">
+                    <rect key="frame" x="0.0" y="324" width="375" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Gg8-j8-rY5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="J7x-yL-yx4" firstAttribute="top" secondItem="2YS-Ln-pwQ" secondAttribute="bottom" constant="41" id="6pa-Ct-LUB"/>
+                <constraint firstItem="mmc-CU-6Vb" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="NPE-3Q-fPj"/>
+                <constraint firstItem="J7x-yL-yx4" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Plo-Z1-l4j"/>
+                <constraint firstItem="7z8-qS-8m7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="Qn1-Zy-sFQ"/>
+                <constraint firstItem="dp0-y6-g44" firstAttribute="top" secondItem="J7x-yL-yx4" secondAttribute="bottom" constant="25" id="R55-SU-iNI"/>
+                <constraint firstItem="2YS-Ln-pwQ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="XcX-3X-gy7"/>
+                <constraint firstItem="mmc-CU-6Vb" firstAttribute="top" secondItem="7z8-qS-8m7" secondAttribute="bottom" constant="8" id="cNY-NM-cNN"/>
+                <constraint firstItem="dp0-y6-g44" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="cP4-97-DaZ"/>
+                <constraint firstItem="wRr-mN-4Uq" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="edA-e4-tGe"/>
+                <constraint firstItem="dp0-y6-g44" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gfQ-9j-vZy"/>
+                <constraint firstItem="2YS-Ln-pwQ" firstAttribute="top" secondItem="wRr-mN-4Uq" secondAttribute="bottom" constant="-1" id="qe2-UV-JV7"/>
+                <constraint firstItem="wRr-mN-4Uq" firstAttribute="top" secondItem="mmc-CU-6Vb" secondAttribute="bottom" constant="58" id="w5K-AB-ylm"/>
+                <constraint firstItem="7z8-qS-8m7" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="zGJ-OQ-NIZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

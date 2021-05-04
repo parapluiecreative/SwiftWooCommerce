@@ -1,0 +1,6 @@
+framework module Pods_Shopertino {
+  umbrella header "Pods-Shopertino-umbrella.h"
+
+  export *
+  module * { export * }
+}

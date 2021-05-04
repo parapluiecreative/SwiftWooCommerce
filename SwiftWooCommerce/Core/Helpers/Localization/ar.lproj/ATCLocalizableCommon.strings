@@ -1,0 +1,108 @@
+/* 
+  ATCLocalizable.strings
+  StoreLocator
+
+  Created by Duy Bui on 12/4/19.
+  Copyright © 2019 Instamobile. All rights reserved.
+*/
+
+"Filters" = "المرشحات";
+"Default description" = "الوصف الافتراضي";
+"Please send us an email at" = "الرجاء إرسال بريد إلكتروني إلينا على";
+"Get in Touch" = "كن على اتصال";
+"Carousel" = "كاروسيل";
+"Location" = "موقعك";
+"Messages" = "الرسائل";
+"All" = "الكل";
+"No Messages" = "لا توجد رسائل";
+"We would love your feedback" = "نحن نحب ملاحظاتك";
+"or \n you can find us on Social Media" = "أو \ n يمكنك أن تجدنا على وسائل";
+"Listen" = "اسمع";
+"News" = "الأخبار";
+"Posts" = "المشاركات";
+"Home" = "الصفحة الرئيسية";
+"Edit Profile" = "تحرير ملف التعريف";
+"My Profile" = "ملفي";
+"Error" = "خطأ";
+"There was an issue while updating the profile. Please try again." = "حدثت مشكلة أثناء تحديث ملف التعريف. يرجى المحاولة مرة أخرى.";
+"Select..." = "تحديد...";
+"Save" = "حفظ";
+"Start typing..." = "ابدأ الطباعة...";
+"Loading" = "جار التحميل";
+"Congratulations" = "تهانينا";
+"Your account has been successfully created" = "تم إنشاء حسابك بنجاح";
+
+// MARK: - Terms of use
+"Terms of Use" = "شروط الاستخدام";
+"By creating an account you agree with our " = "بإنشاء حساب أنت توافق على";
+
+// MARK: - Error
+"The login credentials are invalid. Please try again" = "بيانات اعتماد تسجيل الدخول غير صالحة. يرجى المحاولة مرة أخرى";
+"There was an error during the registration process. Please check all the fields and try again." = "حدث خطأ أثناء عملية التسجيل. يرجى التحقق من جميع الحقول والمحاولة مرة أخرى.";
+"Password must be longer than 6 characters." = "يجب أن تكون كلمة المرور أطول من 6 أحرف.";
+"E-mail must have the correct format." = "يجب أن يكون البريد الإلكتروني بالتنسيق الصحيح.";
+"E-mail must not be empty." = "يجب ألا يكون البريد الإلكتروني فارغًا.";
+"Name must be longer than 2 characters." = "يجب أن يكون الاسم أطول من حرفين.";
+"There was an error. Please try again later" = "كان هناك خطأ، الرجاء المحاولة مجددا لاحقا";
+"E-mail already exists. Did you sign up with a different method (email, facebook, apple)?" = "البريد الإلكتروني موجود بالفعل. هل قمت بالتسجيل باستخدام طريقة مختلفة (البريد الإلكتروني أو facebook أو apple)؟";
+
+// MARK: - Contact section
+"Contact" = "اتصل";
+"Contact Us" = "اتصل بنا";
+"Call Us" = "اتصل بنا";
+"E-mail us" = "البريد الإلكتروني لنا";
+"Our address" = "عنواننا";
+
+// MARK: - Title button
+"Done" = "فعله";
+"Cancel" = "إلغاء";
+"OK" = "حسنا";
+"Show all" = "عرض الكل";
+"Logout" = "الخروج";
+"Settings" = "الإعدادات";
+"Yes" = "نعم فعلا";
+
+// MARK: - Tab bar items
+"HOME" = "الصفحة الرئيسية";
+"COLLECTIONS" = "مختارات";
+"MESSAGES" = "الرسائل";
+"SEARCH" = "بحث";
+"PROFILE" = "الملف الشخصي";
+"LOGOUT" = "الخروج";
+"ADD" = "أضف";
+
+// MARK: - Onboarding Screens
+"Welcome to Instachatty" = "مرحبا بكم في Instachatty";
+"Stay in touch with your best friends." = "ابق على اتصال مع أفضل أصدقائك.";
+"Log In" = "تسجيل الدخول";
+"Sign Up" = "سجل";
+"E-mail" = "البريد الإلكتروني";
+"Password" = "كلمه السر";
+"Sign In" = "تسجيل الدخول";
+"Send Code" = "إرسال الرمز";
+"Submit Code" = "إرسال الرمز";
+"Facebook Login" = "تسجيل الدخول الى الفيسبوك";
+"Phone number" = "رقم الهاتف";
+"Login with phone number" = "تسجيل الدخول مع رقم الهاتف";
+"Sign in with E-mail" = "تسجيل الدخول مع البريد الإلكتروني";
+"OR" = "أو";
+"E-mail or phone number" = "البريد الإلكتروني أو رقم الهاتف";
+"Full Name" = "الاسم الكامل";
+"Phone Number" = "رقم الهاتف";
+"E-mail Address" = "عنوان البريد الإلكتروني";
+"Create new account" = "انشاء حساب جديد";
+"First Name" = "الاسم الاول";
+"Last Name" = "الكنية";
+"Sign up with phone number" = "الاشتراك مع رقم الهاتف";
+"Sign up with E-mail" = "سجل عن طريق البريد الإلكتروني";
+"Forgot Password" = "هل نسيت كلمة المرور؟";
+"Reset Password" = "إعادة تعيين كلمة المرور";
+"Reset My Password" = "إعادة تعيين كلمة المرور الخاصة بي";
+"We have just sent you a password reset email. Please check your inbox and follow the instructions to reset your password" = "لقد أرسلنا لك للتو رسالة بريد إلكتروني لإعادة تعيين كلمة المرور. يرجى التحقق من صندوق الوارد الخاص بك واتبع التعليمات لإعادة تعيين كلمة المرور الخاصة بك";
+"E-mail is invalid. Please try again" = "البريد الإلكتروني غير صالح. حاول مرة اخرى";
+
+// MARK: - Chat Screens
+"Upload Media" = "تحميل وسائل الإعلام";
+"Choose Media" = "اختر الوسائط";
+"Take Photo" = "تصوير";
+"Import from Library" = "استيراد من المكتبة";

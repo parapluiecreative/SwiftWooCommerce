@@ -1,0 +1,91 @@
+/* 
+  Localizable.strings
+  Shopertino
+
+  Created by Duy Bui on 1/1/20.
+  Copyright © 2020 Instamobile. All rights reserved.
+*/
+
+"Ordered on " = "تم الطلب";
+"Total: $" = "المجموع: $";
+"REORDER" = "إعادة ترتيب";
+"No Orders" = "لا توجد أوامر";
+"No orders yet." = "لا توجد أوامر حتى الآن.";
+"Settings" = "الإعدادات";
+"Security" = "الأمان";
+"Enable Face ID / Touch ID Login" = "تمكين تسجيل الدخول لمعرف الوجه / معرف اللمس";
+"While turned off, you will still be able to login with your password." = "أثناء إيقاف التشغيل ، ستظل قادرًا على تسجيل الدخول باستخدام كلمة المرور الخاصة بك.";
+"Push Notifications" = "دفع الإخطارات";
+"Order updates" = "تحديثات ترتيب";
+"New arrivals" = "الوافدون الجدد";
+"Promotions" = "الترقيات";
+"Sales alerts" = "تنبيهات المبيعات";
+"Account" = "الحساب";
+"Support" = "الدعم";
+"Log Out" = "تسجيل خروج";
+"Settings" = "الإعدادات";
+"Account Details" = "تفاصيل الحساب";
+"Contact Us" = "اتصل بنا";
+"Wishlist" = "قائمة الرغبات";
+"Order History" = "تاريخ الطلب";
+"Profile" = "الملف الشخصي";
+"Search Products..." = "البحث عن المنتجات...";
+"CONTINUE" = "استمر";
+"Total" = "مجموع";
+"Shopping Bag" = "كيس التسوق";
+"No Cart Items" = "لا توجد عناصر سلة";
+"There are no items in your shopping cart." = "لا توجد سلع في عربة التسوق الخاصة بك.";
+"Remove from cart?" = "إزالة من العربة؟";
+"This product will be removed from cart." = "سيتم إزالة هذا المنتج من السلة.";
+"Remove" = "إزالة";
+"Cancel" = "إلغاء";
+"ADD TO BAG" = "أضف الى الحقيبة";
+"Pay" = "دفع";
+"Total for " = "المجموع";
+"No Products" = "لا توجد منتجات";
+"There are no products available for purchase at this time." = "لا توجد منتجات متاحة للشراء في هذا الوقت.";
+"No Products" = "لا توجد منتجات";
+"No products were added to the wishlist." = "لم تتم إضافة أي منتجات إلى قائمة الأمنيات.";
+"No Categories" = "لا توجد فئات";
+"No categories found." = "لم يتم العثور على فئات.";
+"Shop" = "متجر";
+"Shopertino" = "Shopertino";
+"New Arrivals" = "القادمون الجدد";
+"Featured" = "متميز";
+"Best Sellers" = "أكثر الكتب مبيعًا";
+"HOME" = "الصفحة الرئيسية";
+"SHOP" = "متجر";
+"BAG" = "كيس";
+"SEARCH" = "بحث";
+"ORDERS" = "الطلب #٪ S";
+"WISHLIST" = "قائمة الرغبات";
+"PROFILE" = "الملف الشخصي";
+"LOGOUT" = "تسجيل خروج";
+"Welcome to Shopertino! Buy our products easily and get access to app only exclusives." = "مرحبًا بكم في Shopertino! اشترِ منتجاتنا بسهولة والحصول على التطبيق الحصري فقط.";
+"Shopping Bag" = "كيس التسوق";
+"Add products to your shopping cart, and check them out later." = "أضف منتجات إلى سلة التسوق الخاصة بك ، وتحقق منها في وقت لاحق.";
+"Quick Search" = "بحث سريع";
+"Quickly find the products you like the most." = "العثور بسرعة على المنتجات التي تحبها أكثر من غيرها.";
+"Wishlist" = "قائمة الرغبات";
+"Build a wishlist with your favorite products to buy them later" = "أنشئ قائمة أمنيات مع منتجاتك المفضلة لشرائها لاحقًا";
+"Order Tracking" = "تتبع الطلب";
+"Monitor your orders and get updates when something changes." = "راقب طلباتك واحصل على تحديثات عندما يتغير شيء ما.";
+"Notifications" = "إشعارات";
+"Get notifications for new products, promotions and discounts." = "احصل على إشعارات للمنتجات الجديدة والعروض الترويجية والخصومات." ;
+"Stripe Payments" = "المدفوعات الشريطية";
+"We support all payment options, thanks to Stripe." = "نحن ندعم جميع خيارات الدفع ، بفضل Stripe.";
+"Apple Pay" = "أبل الدفع";
+"Pay with a single click with Apple Pay." = "الدفع بنقرة واحدة باستخدام Apple Pay.";
+"Welcome to Shopertino" = "مرحبا بكم في Shopertino";
+"Shop & get updates on new products, promotions and sales with our mobile app." = "تسوق واحصل على تحديثات حول المنتجات الجديدة والعروض الترويجية والمبيعات من خلال تطبيق الجوّال لدينا.";
+"Log In" = "تسجيل الدخول";
+"Sign Up" = "سجل";
+"Sign In" = "تسجيل الدخول";
+"E-mail or phone number" = "البريد الإلكتروني أو رقم الهاتف";
+"Facebook Login" = "تسجيل الدخول الى الفيسبوك";
+"OR" = "أو";
+"Full Name" = "الاسم الكامل";
+"Password" = "كلمه السر";
+"Phone Number" = "رقم الهاتف";
+"E-mail Address" = "عنوان البريد الإلكتروني";
+"Create new account" = "انشاء حساب جديد";

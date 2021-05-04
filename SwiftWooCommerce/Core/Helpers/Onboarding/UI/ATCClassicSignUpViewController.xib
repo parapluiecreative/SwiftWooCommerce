@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ATCClassicSignUpViewController" customModule="UberTaxiApp" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="Ihk-FI-c45" id="5vg-nL-5mW"/>
+                <outlet property="containerView" destination="92z-4W-VOp" id="YVM-9b-mYk"/>
+                <outlet property="emailTextField" destination="6wF-ah-ypV" id="zXG-PG-TpG"/>
+                <outlet property="errorLabel" destination="Gkb-fr-6SL" id="DV7-C7-mQR"/>
+                <outlet property="nameTextField" destination="47e-GP-Bg2" id="Lpu-pI-2En"/>
+                <outlet property="passwordTextField" destination="Cog-bV-kUc" id="OEu-nA-lMd"/>
+                <outlet property="phoneNumberTextField" destination="ZCl-l1-vQW" id="Mcx-MR-vu6"/>
+                <outlet property="signUpButton" destination="d4p-KZ-WxV" id="1Hb-tg-b2a"/>
+                <outlet property="textView" destination="Rmd-wB-G9B" id="7b3-cD-WgC"/>
+                <outlet property="titleLabel" destination="fyU-KV-0Vg" id="X0M-I7-gIn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92z-4W-VOp" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHI-pI-xhZ">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNA-HL-lx0" userLabel="Content View">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihk-FI-c45" userLabel="Back Button">
+                                            <rect key="frame" x="9" y="8" width="25" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="jIq-mc-QfJ"/>
+                                                <constraint firstAttribute="width" constant="25" id="mLr-21-H23"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="arrow-back-icon"/>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyU-KV-0Vg" userLabel="Title Label">
+                                            <rect key="frame" x="20" y="73" width="41.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="47e-GP-Bg2" userLabel="Name Text Field" customClass="ATCTextField" customModule="UberTaxiApp" customModuleProvider="target">
+                                            <rect key="frame" x="40" y="133.5" width="295" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="Q62-fu-BRG"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZCl-l1-vQW" userLabel="Phone Number Text Field" customClass="ATCTextField" customModule="UberTaxiApp" customModuleProvider="target">
+                                            <rect key="frame" x="40" y="193.5" width="295" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="xy5-sb-POC"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SOK-tu-BKx">
+                                            <rect key="frame" x="40" y="253.5" width="295" height="100"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6wF-ah-ypV" userLabel="E-mail Adress Text Field" customClass="ATCTextField" customModule="UberTaxiApp" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="295" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="kBZ-Iz-ijf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cog-bV-kUc" userLabel="Password Text Field" customClass="ATCTextField" customModule="UberTaxiApp" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="60" width="295" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="srW-KN-cZ9"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkb-fr-6SL" userLabel="Error Label">
+                                            <rect key="frame" x="187.5" y="368.5" width="0.0" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4p-KZ-WxV" userLabel="Sign Up Button">
+                                            <rect key="frame" x="60" y="393.5" width="255" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="wZd-EG-swD"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rmd-wB-G9B">
+                                            <rect key="frame" x="30" y="547" width="315" height="80"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="oaX-ML-hPj"/>
+                                            </constraints>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="47e-GP-Bg2" firstAttribute="top" secondItem="fyU-KV-0Vg" secondAttribute="bottom" constant="40" id="0iu-b7-ic9"/>
+                                        <constraint firstAttribute="trailing" secondItem="47e-GP-Bg2" secondAttribute="trailing" constant="40" id="6ra-NB-qGr"/>
+                                        <constraint firstAttribute="trailing" secondItem="SOK-tu-BKx" secondAttribute="trailing" constant="40" id="8NW-6Z-qEj"/>
+                                        <constraint firstItem="SOK-tu-BKx" firstAttribute="leading" secondItem="gNA-HL-lx0" secondAttribute="leading" constant="40" id="8tD-m5-BzA"/>
+                                        <constraint firstAttribute="trailing" secondItem="ZCl-l1-vQW" secondAttribute="trailing" constant="40" id="BF1-Qx-mNy"/>
+                                        <constraint firstItem="47e-GP-Bg2" firstAttribute="leading" secondItem="gNA-HL-lx0" secondAttribute="leading" constant="40" id="FLl-ZP-nuJ"/>
+                                        <constraint firstItem="fyU-KV-0Vg" firstAttribute="leading" secondItem="gNA-HL-lx0" secondAttribute="leading" constant="20" id="H4G-Y4-UTF"/>
+                                        <constraint firstItem="fyU-KV-0Vg" firstAttribute="top" secondItem="Ihk-FI-c45" secondAttribute="bottom" constant="50" id="HrA-xS-VSV"/>
+                                        <constraint firstItem="Rmd-wB-G9B" firstAttribute="leading" secondItem="gNA-HL-lx0" secondAttribute="leading" constant="30" id="Nfk-Dr-jyy"/>
+                                        <constraint firstItem="ZCl-l1-vQW" firstAttribute="leading" secondItem="gNA-HL-lx0" secondAttribute="leading" constant="40" id="OCA-4w-JIv"/>
+                                        <constraint firstItem="SOK-tu-BKx" firstAttribute="top" secondItem="ZCl-l1-vQW" secondAttribute="bottom" constant="20" id="Q6T-c5-cjz"/>
+                                        <constraint firstItem="Ihk-FI-c45" firstAttribute="leading" secondItem="gNA-HL-lx0" secondAttribute="leading" constant="8" id="Sn9-lx-ibn"/>
+                                        <constraint firstAttribute="trailing" secondItem="Rmd-wB-G9B" secondAttribute="trailing" constant="30" id="cZB-KD-O1t"/>
+                                        <constraint firstItem="d4p-KZ-WxV" firstAttribute="top" secondItem="Gkb-fr-6SL" secondAttribute="bottom" constant="25" id="fL8-xa-cKH"/>
+                                        <constraint firstAttribute="bottom" secondItem="Rmd-wB-G9B" secondAttribute="bottom" constant="40" id="ie4-tA-QP4"/>
+                                        <constraint firstItem="d4p-KZ-WxV" firstAttribute="leading" secondItem="gNA-HL-lx0" secondAttribute="leading" constant="60" id="l9J-Hr-eLa"/>
+                                        <constraint firstItem="ZCl-l1-vQW" firstAttribute="top" secondItem="47e-GP-Bg2" secondAttribute="bottom" constant="20" id="myn-mL-x0E"/>
+                                        <constraint firstItem="Gkb-fr-6SL" firstAttribute="centerX" secondItem="gNA-HL-lx0" secondAttribute="centerX" id="nCO-yZ-UIj"/>
+                                        <constraint firstAttribute="trailing" secondItem="d4p-KZ-WxV" secondAttribute="trailing" constant="60" id="qPD-0y-zBT"/>
+                                        <constraint firstItem="Gkb-fr-6SL" firstAttribute="top" secondItem="SOK-tu-BKx" secondAttribute="bottom" constant="15" id="yTh-O1-qjj"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="gNA-HL-lx0" firstAttribute="centerX" secondItem="XHI-pI-xhZ" secondAttribute="centerX" id="9Qe-D4-KxW"/>
+                                <constraint firstAttribute="bottom" secondItem="gNA-HL-lx0" secondAttribute="bottom" id="ASq-Et-PSA"/>
+                                <constraint firstItem="gNA-HL-lx0" firstAttribute="centerY" secondItem="XHI-pI-xhZ" secondAttribute="centerY" id="DKk-iw-u3w"/>
+                                <constraint firstItem="gNA-HL-lx0" firstAttribute="top" secondItem="XHI-pI-xhZ" secondAttribute="top" id="FVt-Qi-smE"/>
+                                <constraint firstAttribute="trailing" secondItem="gNA-HL-lx0" secondAttribute="trailing" id="KQJ-q9-JCK"/>
+                                <constraint firstItem="gNA-HL-lx0" firstAttribute="leading" secondItem="XHI-pI-xhZ" secondAttribute="leading" id="cbR-eJ-cA4"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="XHI-pI-xhZ" firstAttribute="height" secondItem="92z-4W-VOp" secondAttribute="height" id="UXq-61-HcS"/>
+                        <constraint firstItem="XHI-pI-xhZ" firstAttribute="width" secondItem="92z-4W-VOp" secondAttribute="width" id="cZ7-en-H4q"/>
+                        <constraint firstItem="XHI-pI-xhZ" firstAttribute="centerX" secondItem="92z-4W-VOp" secondAttribute="centerX" id="wqI-gi-3op"/>
+                        <constraint firstItem="XHI-pI-xhZ" firstAttribute="centerY" secondItem="92z-4W-VOp" secondAttribute="centerY" id="yij-UX-Gx3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="92z-4W-VOp" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="GHp-vm-JCr"/>
+                <constraint firstItem="92z-4W-VOp" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="iyX-23-TEB"/>
+                <constraint firstItem="92z-4W-VOp" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="kdJ-yj-zc8"/>
+                <constraint firstItem="92z-4W-VOp" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="swU-5I-2Pa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="Ihk-FI-c45" secondAttribute="top" constant="2" id="uXr-8K-yca"/>
+            </constraints>
+            <point key="canvasLocation" x="32.799999999999997" y="52.623688155922046"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow-back-icon" width="25" height="25"/>
+    </resources>
+</document>

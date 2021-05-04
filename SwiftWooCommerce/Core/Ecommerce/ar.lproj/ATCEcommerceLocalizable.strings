@@ -1,0 +1,67 @@
+/* 
+  EcommerceLocalizable.strings
+  RestaurantApp
+
+  Created by Duy Bui on 12/10/19.
+  Copyright © 2019 iOS App Templates. All rights reserved.
+*/
+
+"No Orders" = "لا توجد أوامر";
+"No customer ordered any products yet. All orders will be displayed here." = "لم يطلب أي عميل أي منتجات حتى الآن. سيتم عرض جميع الطلبات هنا.";
+"Admin Orders" = "أوامر المشرف";
+"Order #" = "اطلب #";
+"Address: " = "عنوان";
+"Total: $" = "المجموع: $";
+"Total" = "المجموع";
+"Orders" = "أوامر";
+"Home" = "الصفحة الرئيسية";
+"Best Deals" = "أفضل الصفقات";
+"Popular Categories" = "الفئات الشعبية";
+"Order Placed" = "تم الطلب";
+"Order Shipped" = "تم شحن الطلب";
+"In transit" = "في مرحلة انتقالية";
+"Order Completed" = "تم اكتمال الطلب";
+"Order Cancelled" = "تم الغاء الأمر او الطلب";
+"No address" = "لا يوجد عنوان";
+"Search Products..." = "البحث عن المنتجات...";
+"Product" = "المنتج";
+"Category" = "فئة";
+"Shop" = "متجر";
+"Most Popular" = "الأكثر شعبية";
+"ADMIN DASHBOARD" = "لوحة معلومات الإدارة";
+"ORDERS" = "أوامر";
+"RESERVATIONS" = "التحفظات";
+"CART" = "عربة التسوق";
+"cart" = "عربة التسوق";
+"MENU" = "قائمة طعام";
+"Menu" = "قائمة طعام";
+"No Items" = "لا توجد عناصر";
+"There are currently no products. All products added by the selected vendor will be displayed here." = "لا توجد منتجات في الوقت الحالي. سيتم عرض جميع المنتجات التي أضافها البائع المحدد هنا.";
+"Update item" = "تحديث العنصر";
+"Remove from cart" = "أزل من العربة";
+"Reservations" = "التحفظات";
+"First Name" = "الاسم الاول";
+"Last Name" = "الكنية";
+"Phone Number" = "رقم الهاتف";
+"Reservation Details" = "تفاصيل الحجز";
+"Make Reservation" = "قم بالحجز";
+"Couldn't make the reservation" = "لا يمكن إجراء الحجز";
+"Please fill out the mandatory fields (phone, first and last name)." = "يرجى ملء الحقول الإلزامية (الهاتف ، الاسم الأول والأخير).";
+"We received your reservation. See you there!" = "لقد تلقينا حجزك. أراك هناك!";
+"Your Cart" = "عربتك";
+"PLACE ORDER" = "مكان الامر";
+"REORDER" = "إعادة ترتيب";
+"Add to Cart" = "أضف إلى السلة";
+"Reset shopping cart?" = "إعادة ضبط عربة التسوق؟";
+"You can only order from a single vendor per transaction. Your previous items will be removed from the cart." = "يمكنك فقط الطلب من بائع واحد لكل معاملة. ستتم إزالة العناصر السابقة من السلة.";
+"Total Due" = "الاجمالي المستحق";
+"Placing order..." = "طلب...";
+"Restaurant" = "مطعم";
+"Your order has been placed" = "تم تقديم طلبك";
+"Your order has been shipped" = "تم شحن طلبك";
+"Your order is in transit" = "طلبك قيد النقل";
+"Your order has been completed" = "لقد تم إكمال طلبك";
+"Your order has been cancelled" = "تم إلغاء طلبك";
+"New order has been placed" = "تم تقديم طلب جديد";
+"Accept" = "قبول";
+"Reject" = "رفض";

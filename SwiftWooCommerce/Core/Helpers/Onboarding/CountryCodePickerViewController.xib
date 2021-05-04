@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountryCodePickerViewController" customModule="ChatApp" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="16m-bs-Tww" id="Pr4-eX-sTc"/>
+                <outlet property="countryCodePickerTableHeightCons" destination="A7z-hc-zE1" id="l0I-3B-jcp"/>
+                <outlet property="countryCodePickerTableView" destination="gVe-Y2-WLU" id="7XA-sK-VE0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i26-Wb-oua">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gVe-Y2-WLU" customClass="ContentSizedTableView" customModule="ChatApp" customModuleProvider="target">
+                            <rect key="frame" x="41.5" y="65" width="331" height="688"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="688" id="A7z-hc-zE1"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="sCk-Wj-653"/>
+                                <outlet property="delegate" destination="-1" id="Edd-ts-jdC"/>
+                            </connections>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16m-bs-Tww">
+                            <rect key="frame" x="41.5" y="763" width="331" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="dUf-1E-hVx"/>
+                            </constraints>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="xUl-9h-2Qv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.4765089897260274" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="gVe-Y2-WLU" firstAttribute="centerX" secondItem="i26-Wb-oua" secondAttribute="centerX" id="2SZ-zd-A38"/>
+                        <constraint firstItem="16m-bs-Tww" firstAttribute="width" secondItem="gVe-Y2-WLU" secondAttribute="width" id="LII-1c-oLO"/>
+                        <constraint firstItem="gVe-Y2-WLU" firstAttribute="height" relation="lessThanOrEqual" secondItem="i26-Wb-oua" secondAttribute="height" constant="-130" id="OMx-fH-V3H"/>
+                        <constraint firstItem="gVe-Y2-WLU" firstAttribute="centerY" secondItem="i26-Wb-oua" secondAttribute="centerY" id="dYe-uu-zIL"/>
+                        <constraint firstItem="16m-bs-Tww" firstAttribute="centerX" secondItem="i26-Wb-oua" secondAttribute="centerX" id="glx-HF-4zo"/>
+                        <constraint firstItem="16m-bs-Tww" firstAttribute="top" secondItem="gVe-Y2-WLU" secondAttribute="bottom" constant="10" id="m6k-9n-DB7"/>
+                        <constraint firstItem="gVe-Y2-WLU" firstAttribute="width" secondItem="i26-Wb-oua" secondAttribute="width" multiplier="0.8" id="xUz-NA-yZy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="i26-Wb-oua" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Brd-8G-2gz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="i26-Wb-oua" secondAttribute="bottom" id="MOg-Xt-cp9"/>
+                <constraint firstItem="i26-Wb-oua" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="k3c-QW-5ME"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i26-Wb-oua" secondAttribute="trailing" id="vno-CX-cMN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
+        </view>
+    </objects>
+</document>

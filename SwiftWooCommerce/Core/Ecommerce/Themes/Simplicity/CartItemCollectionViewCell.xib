@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CartItemCollectionViewCell" customModule="RestaurantApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="251" height="63"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="251" height="63"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXz-lE-84j">
+                        <rect key="frame" x="32" y="23" width="90.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vi-Jm-GO2" userLabel="Cart Count Label">
+                        <rect key="frame" x="14" y="21" width="8" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQn-hr-co2">
+                        <rect key="frame" x="210" y="24.5" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="3Vi-Jm-GO2" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="1NG-Gp-FFS"/>
+                <constraint firstItem="IXz-lE-84j" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="KeF-ze-LRl"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="oQn-hr-co2" secondAttribute="trailing" constant="10" id="X5d-sU-wMo"/>
+                <constraint firstItem="3Vi-Jm-GO2" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="14" id="YL7-A5-jSr"/>
+                <constraint firstItem="oQn-hr-co2" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="YPc-vb-1ff"/>
+                <constraint firstItem="IXz-lE-84j" firstAttribute="leading" secondItem="3Vi-Jm-GO2" secondAttribute="trailing" constant="10" id="jhy-kF-BTI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="251" height="63"/>
+            <connections>
+                <outlet property="cartItemTitleLabel" destination="IXz-lE-84j" id="dPl-eB-eRg"/>
+                <outlet property="cartPriceLabel" destination="oQn-hr-co2" id="KfH-cP-Ety"/>
+                <outlet property="countLabel" destination="3Vi-Jm-GO2" id="DRH-dx-ENe"/>
+            </connections>
+            <point key="canvasLocation" x="182.5" y="114.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

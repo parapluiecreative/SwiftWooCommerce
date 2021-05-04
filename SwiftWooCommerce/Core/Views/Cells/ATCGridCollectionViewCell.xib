@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ATCGridCollectionViewCell" customModule="ClassifiedsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="261" height="371"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="261" height="371"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kkI-J8-J5U" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="261" height="371"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i65-sh-ReQ" userLabel="Grid Title Label">
+                                <rect key="frame" x="20" y="15" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nmn-nk-YGK" userLabel="Grid View">
+                                <rect key="frame" x="0.0" y="41" width="261" height="255"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gf-ZA-AgQ" userLabel="Call to Action Button">
+                                <rect key="frame" x="20" y="311" width="221" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="FJE-d7-unG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nmn-nk-YGK" firstAttribute="top" secondItem="i65-sh-ReQ" secondAttribute="bottom" constant="5" id="22m-bs-2xt"/>
+                            <constraint firstItem="i65-sh-ReQ" firstAttribute="leading" secondItem="kkI-J8-J5U" secondAttribute="leading" constant="20" id="Nkd-ZV-4y4"/>
+                            <constraint firstItem="4gf-ZA-AgQ" firstAttribute="centerX" secondItem="kkI-J8-J5U" secondAttribute="centerX" id="TeD-Fq-NtR"/>
+                            <constraint firstItem="Nmn-nk-YGK" firstAttribute="centerX" secondItem="kkI-J8-J5U" secondAttribute="centerX" id="ahm-9R-QR0"/>
+                            <constraint firstItem="4gf-ZA-AgQ" firstAttribute="top" secondItem="Nmn-nk-YGK" secondAttribute="bottom" constant="15" id="izi-01-EFd"/>
+                            <constraint firstItem="4gf-ZA-AgQ" firstAttribute="width" secondItem="kkI-J8-J5U" secondAttribute="width" constant="-40" id="kKs-1e-aeY"/>
+                            <constraint firstItem="Nmn-nk-YGK" firstAttribute="width" secondItem="kkI-J8-J5U" secondAttribute="width" id="lGR-Gu-piN"/>
+                            <constraint firstItem="i65-sh-ReQ" firstAttribute="top" secondItem="kkI-J8-J5U" secondAttribute="top" constant="15" id="ue7-fq-CAw"/>
+                            <constraint firstAttribute="bottom" secondItem="4gf-ZA-AgQ" secondAttribute="bottom" constant="15" id="xgs-v7-pRE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="kkI-J8-J5U" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="A98-mc-wqC"/>
+                <constraint firstItem="kkI-J8-J5U" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="crX-uD-8Dr"/>
+                <constraint firstItem="kkI-J8-J5U" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="iJj-O6-cDN"/>
+                <constraint firstItem="kkI-J8-J5U" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="ubt-hJ-HWE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="261" height="371"/>
+            <connections>
+                <outlet property="callToActionButton" destination="4gf-ZA-AgQ" id="a0Y-W5-yVQ"/>
+                <outlet property="containerView" destination="kkI-J8-J5U" id="tQh-w4-JBq"/>
+                <outlet property="gridTitleLabel" destination="i65-sh-ReQ" id="3cr-qO-aVR"/>
+                <outlet property="gridView" destination="Nmn-nk-YGK" id="gpH-qX-XL5"/>
+            </connections>
+            <point key="canvasLocation" x="-71.5" y="128.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

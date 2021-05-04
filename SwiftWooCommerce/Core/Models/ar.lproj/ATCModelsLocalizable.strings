@@ -1,0 +1,16 @@
+/* 
+  ATCModelsLocalizable.strings
+  StoreLocator
+
+  Created by Duy Bui on 12/8/19.
+  Copyright © 2019 Instamobile. All rights reserved.
+*/
+
+"Custom Range" = "نطاق مخصص";
+"Today" = "اليوم";
+"Yesterday" = "في الامس";
+"Last Week" = "الاسبوع الماضي";
+"Last Month" = "الشهر الماضي";
+"Year to Date" = "منذ بدلية العام ز حتى اليوم";
+"Lifetime" = "أوقات الحياة";
+"This month" = "هذا الشهر";

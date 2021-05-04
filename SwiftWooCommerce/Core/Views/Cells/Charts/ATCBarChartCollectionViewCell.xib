@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ATCBarChartCollectionViewCell" customModule="DashboardApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="106"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="174" height="106"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HeU-0B-9jj" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="174" height="106"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EmY-Df-ymz" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="174" height="106"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EmY-Df-ymz" firstAttribute="height" secondItem="HeU-0B-9jj" secondAttribute="height" id="QKz-Tp-Guf"/>
+                            <constraint firstItem="EmY-Df-ymz" firstAttribute="centerY" secondItem="HeU-0B-9jj" secondAttribute="centerY" id="QXJ-Zr-LNG"/>
+                            <constraint firstItem="EmY-Df-ymz" firstAttribute="centerX" secondItem="HeU-0B-9jj" secondAttribute="centerX" id="UBM-JS-38v"/>
+                            <constraint firstItem="EmY-Df-ymz" firstAttribute="width" secondItem="HeU-0B-9jj" secondAttribute="width" id="iT6-co-Di7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="HeU-0B-9jj" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="G7C-do-rDD"/>
+                <constraint firstItem="HeU-0B-9jj" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="HGz-vj-oQ4"/>
+                <constraint firstItem="HeU-0B-9jj" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="eOR-1F-8UW"/>
+                <constraint firstItem="HeU-0B-9jj" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="ut3-lh-B2E"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="174" height="106"/>
+            <connections>
+                <outlet property="barChartView" destination="EmY-Df-ymz" id="bwH-Rg-1fM"/>
+                <outlet property="containerView" destination="HeU-0B-9jj" id="FUV-cl-I80"/>
+            </connections>
+            <point key="canvasLocation" x="-28" y="82"/>
+        </collectionViewCell>
+    </objects>
+</document>

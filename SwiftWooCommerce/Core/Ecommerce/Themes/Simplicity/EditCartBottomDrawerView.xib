@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditCartBottomDrawerView" customModule="MultiVendorApp" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="IF4-5a-b4E"/>
+                <outlet property="contentView" destination="Q1E-ce-Sfz" id="qe4-ak-zOM"/>
+                <outlet property="editCartButton" destination="g4T-sB-YZU" id="XZV-kx-33V"/>
+                <outlet property="removeFromCartButton" destination="CvI-k6-2Uh" id="hXP-BV-5jn"/>
+                <outlet property="stepperier" destination="9Lj-R5-5EF" id="2Q5-BP-ND6"/>
+                <outlet property="titleLabel" destination="ske-Jz-Bvx" id="Wy5-8q-56W"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1E-ce-Sfz" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ske-Jz-Bvx" userLabel="Title Label">
+                            <rect key="frame" x="186" y="50" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Lj-R5-5EF" userLabel="Stepperier" customClass="Stepperier" customModule="MultiVendorApp" customModuleProvider="target">
+                            <rect key="frame" x="157" y="91" width="100" height="35"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="CKt-Cp-md8"/>
+                                <constraint firstAttribute="width" constant="100" id="icI-ad-oki"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4T-sB-YZU" userLabel="Edit Cart Button">
+                            <rect key="frame" x="30" y="166" width="354" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="g7d-nf-RRH"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvI-k6-2Uh" userLabel="Remove From Cart Button">
+                            <rect key="frame" x="184" y="211" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="9Lj-R5-5EF" firstAttribute="centerX" secondItem="Q1E-ce-Sfz" secondAttribute="centerX" id="Dp3-Ff-Zgr"/>
+                        <constraint firstItem="ske-Jz-Bvx" firstAttribute="top" secondItem="Q1E-ce-Sfz" secondAttribute="top" constant="50" id="Xe4-d3-lfL"/>
+                        <constraint firstAttribute="trailing" secondItem="g4T-sB-YZU" secondAttribute="trailing" constant="30" id="YI0-sA-Exf"/>
+                        <constraint firstItem="CvI-k6-2Uh" firstAttribute="centerX" secondItem="Q1E-ce-Sfz" secondAttribute="centerX" id="fiJ-GS-Puu"/>
+                        <constraint firstItem="CvI-k6-2Uh" firstAttribute="top" secondItem="g4T-sB-YZU" secondAttribute="bottom" constant="5" id="g9L-Jp-CUe"/>
+                        <constraint firstItem="9Lj-R5-5EF" firstAttribute="top" secondItem="ske-Jz-Bvx" secondAttribute="bottom" constant="20" id="hQx-v1-gFE"/>
+                        <constraint firstItem="ske-Jz-Bvx" firstAttribute="centerX" secondItem="Q1E-ce-Sfz" secondAttribute="centerX" id="oKs-88-Kx4"/>
+                        <constraint firstItem="g4T-sB-YZU" firstAttribute="leading" secondItem="Q1E-ce-Sfz" secondAttribute="leading" constant="30" id="sBx-ol-hDw"/>
+                        <constraint firstItem="g4T-sB-YZU" firstAttribute="top" secondItem="9Lj-R5-5EF" secondAttribute="bottom" constant="40" id="sXD-CK-cUD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q1E-ce-Sfz" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="EOp-TW-oSJ"/>
+                <constraint firstItem="Q1E-ce-Sfz" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="PtD-aY-apI"/>
+                <constraint firstItem="Q1E-ce-Sfz" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="wNt-bd-p6R"/>
+                <constraint firstItem="Q1E-ce-Sfz" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="yFx-44-y1a"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </view>
+    </objects>
+</document>
